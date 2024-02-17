@@ -10,5 +10,10 @@
 </head>
 <body>
     <h1 class="h1-padrao">Formulário de Contato</h1>
+    <form class="form-contato" action="." method="post">
+        {% csrf_token %}
+        {{form}}
+        <input class="btn-enviar" type="submit" value="ENVIAR!">
+    </form>
 </body>
 </html>

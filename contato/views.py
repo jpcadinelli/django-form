@@ -1,4 +1,10 @@
 from django.shortcuts import render
+from django.http import HttpResponseRedirect
+from .forms import ContatoFrom
 
 def index(request):
-    return render(request, 'contato/index.html')
+    form = ContatoFrom()
+    context = {
+        'form': form
+    }
+    return render(request, 'contato/index.html', context=context)
