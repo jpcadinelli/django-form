@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -5,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Formulário de Contato</title>
+    <link rel="stylesheet" href="{% static '/styles/contato.css' %}">
 </head>
 <body>
-    <h1 style="background-color: aquamarine; border-radius: 5px; padding: 5px 15px; width: fit-content;">Formulário de Contato</h1>
+    <h1 class="h1-padrao">Formulário de Contato</h1>
 </body>
 </html>
