@@ -1,10 +1,18 @@
 from django.shortcuts import render
-from django.http import HttpResponseRedirect
-from .forms import ContatoFrom
+from .models import Contato
 
-def index(request):
-    form = ContatoFrom()
+def contato(request) :
+    return render(request, 'contato/index.html')
+
+def formulario_contato(request) :
+    novo_contato = Contato()
+    novo_contato.nome = request.POST.get('nome')
+    novo_contato.telefone = request.POST.get('telefone')
+    novo_contato.email = request.POST.get('email')
+    novo_contato.mensagem = request.POST.get('mensagem')
+    novo_contato.save()
+
     context = {
-        'form': form
+        'contatos': Contato.objects.all(),
     }
-    return render(request, 'contato/index.html', context=context)
+    return render(request, 'contato/contatos.html', context=context)
