@@ -1,0 +1,43 @@
+body {
+    background-color: black;
+}
+
+.h1-padrao {
+    background-color: goldenrod;
+    border-radius: 5px;
+    padding: 5px 15px;
+    width: fit-content;
+    text-shadow: 0 0 5px rgba(255, 255, 255, .5);
+}
+
+.div-tabela-contato {
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+    max-width: 700px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.tabela-contato tr th {
+    text-align: start;
+    width: fit-content;
+    max-width: 200px;
+}
+
+#topo {
+    background-color: darkgoldenrod;
+}
+
+.tb {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+tr {
+    background-color: white;
+}
+
+tr:nth-child(even) {
+    background-color: whitesmoke;
+}

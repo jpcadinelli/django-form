@@ -1,3 +1,7 @@
+body {
+    background-color: black;
+}
+
 .h1-padrao {
     background-color: goldenrod;
     border-radius: 5px;
@@ -13,6 +17,7 @@
     max-width: 700px;
     margin-right: auto;
     margin-left: auto;
+    background-color: white;
 }
 
 .form-contato > div {

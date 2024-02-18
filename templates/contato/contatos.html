@@ -6,26 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Contatos</title>
-    <link rel="stylesheet" href="{% static '/styles/contato.css' %}">
+    <link rel="stylesheet" href="{% static '/styles/contatos.css' %}">
 </head>
 <body>
     <h1 class='h1-padrao'>Contatos</h1>
     <div class="div-tabela-contato">
         <table class="tabela-contato">
-            <tr>
-                <th class="tb-id">id</th>
-                <th class="tb-nome">nome</th>
-                <th class="tb-telefone">telefone</th>
-                <th class="tb-email">email</th>
-                <th class="tb-mensagem">mensagem</th>
+            <tr id="topo">
+                <th class="tb id">id</th>
+                <th class="tb nome">nome</th>
+                <th class="tb telefone">telefone</th>
+                <th class="tb email">email</th>
+                <th class="tb mensagem">mensagem</th>
             </tr>
             {% for contato in contatos %}
-                <tr>
-                    <th class="db-id">{{contato.id}}</th>
-                    <th class="db-nome">{{contato.nome}}</th>
-                    <th class="db-telefone">{{contato.telefone}}</th>
-                    <th class="db-email">{{contato.email}}</th>
-                    <th class="db-mensagem">{{contato.mensagem}}</th>
+                <tr class="linha">
+                    <th class="db id">{{contato.id_contato}}</th>
+                    <th class="db nome">{{contato.nome}}</th>
+                    <th class="db telefone">{{contato.telefone}}</th>
+                    <th class="db email">{{contato.email}}</th>
+                    <th class="db mensagem">{{contato.mensagem}}</th>
                 </tr>
             {% endfor %}
         </table>

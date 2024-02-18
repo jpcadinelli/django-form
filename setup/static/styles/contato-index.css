@@ -1,0 +1,33 @@
+body {
+    background-color: black;
+}
+
+.h1-padrao {
+    background-color: goldenrod;
+    border-radius: 5px;
+    padding: 5px 15px;
+    width: fit-content;
+    text-shadow: 0 0 5px rgba(255, 255, 255, .5);
+}
+
+.form-contato {
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+    max-width: 700px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: rgb(245, 245, 245);
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+.form-contato > div {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}
+
+.btn-enviar {
+    width: fit-content;
+}
